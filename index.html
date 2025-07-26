@@ -15,39 +15,49 @@
 <body>
   <div id="loader"><div class="spinner"></div></div>
 
-  <header class="reveal">
-    <h1>Build Trust Inside Your Professional Community</h1>
-    <p>Vouchli is a secure, modern platform for professionals who value trust, reputation, and meaningful relationships within their community.</p>
-    <button class="cta-button">Request Early Access</button>
+  <header>
+    <div class="container">
+      <img src="assets/logo.svg" alt="Vouchli logo" class="logo" />
+      <h1>Build Trust Inside Your Professional Community</h1>
+      <p class="subtitle">Vouchli is a secure, modern platform for professionals who value trust, reputation, and meaningful relationships within their community.</p>
+      <a href="#cta" class="cta-button">Request Early Access</a>
+    </div>
   </header>
 
-  <section class="reveal" id="why-vouchli">
-    <h2>Why Vouchli?</h2>
-    <div class="carousel-container">
-      <div class="carousel-track">
-        <div class="carousel-slide">✅ <strong>Not anonymous</strong> – Only verified professionals can vouch. No fake accounts.</div>
-        <div class="carousel-slide">✅ <strong>Not generic</strong> – Built for niche communities who share real values and codes.</div>
-        <div class="carousel-slide">✅ <strong>Not superficial</strong> – Vouches require comments and reasons, not just stars.</div>
-        <div class="carousel-slide">✅ <strong>Not extractive</strong> – Vouchli empowers communities, it doesn't exploit them.</div>
-      </div>
+  <section class="why">
+    <div class="container">
+      <h2>Why Vouchli?</h2>
+      <ul class="features">
+        <li><strong>✅ Not anonymous</strong> – Only verified professionals can vouch. No fake accounts.</li>
+        <li><strong>✅ Not generic</strong> – Built for niche communities who share real values and codes.</li>
+        <li><strong>✅ Not superficial</strong> – Vouches require comments and reasons, not just stars.</li>
+        <li><strong>✅ Not extractive</strong> – Vouchli empowers communities, it doesn't exploit them.</li>
+      </ul>
     </div>
   </section>
 
-  <section class="reveal" style="text-align:center;">
-    <h2>Ready to join a trusted circle?</h2>
-    <p>Leave your email to get notified when Vouchli launches.</p>
-    <form action="https://formspree.io/f/YOUR_ID" method="POST">
-      <input type="email" name="email" placeholder="Enter your email" required />
-      <button class="cta-button" type="submit">Request Access</button>
-    </form>
+  <section class="cta" id="cta">
+    <div class="container">
+      <h2>Ready to join a trusted circle?</h2>
+      <p>Leave your email to get notified when Vouchli launches.</p>
+      <form action="https://formspree.io/f/YOUR_ID" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <button type="submit" class="cta-button">Request Access</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    <img src="assets/logo.svg" alt="Vouchli logo" style="height: 40px; margin-bottom: 1rem;">
-    <p>&copy; 2025 Vouchli. All rights reserved. · <a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a></p>
+    <div class="container">
+      <img src="assets/logo.svg" alt="Vouchli logo" class="logo" />
+      <p>&copy; 2025 Vouchli. All rights reserved. · <a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a></p>
+    </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="script.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
 </body>
 </html>
