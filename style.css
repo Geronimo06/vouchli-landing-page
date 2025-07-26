@@ -1,7 +1,5 @@
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -27,14 +25,6 @@ section {
   padding: 4rem 2rem;
   max-width: 1000px;
   margin: 0 auto;
-}
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-}
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
 }
 footer {
   background-color: #1E3A8A;
@@ -66,16 +56,21 @@ body.loaded #loader {
   opacity: 0;
   pointer-events: none;
 }
-#scrollToTop {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #1E3A8A;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border-radius: 0.375rem;
-  cursor: pointer;
-  display: none;
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto;
+  overflow: hidden;
+  height: 80px;
+}
+.carousel-slide {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.carousel-slide.active {
+  opacity: 1;
 }

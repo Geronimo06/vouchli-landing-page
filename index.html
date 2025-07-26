@@ -6,7 +6,11 @@
   <title>Vouchli – Trust Your Community</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preload" href="assets/logo.svg" as="image" type="image/svg+xml">
 </head>
 <body>
   <div id="loader"><div class="spinner"></div></div>
@@ -16,13 +20,13 @@
     <button class="cta-button">Request Early Access</button>
   </header>
 
-  <section class="reveal">
-    <h2>How it works</h2>
-    <div class="steps">
-      <div class="feature-card"><h3>Create your profile</h3><p>Join a trusted community of professionals.</p></div>
-      <div class="feature-card"><h3>Vouch for others</h3><p>Recommend peers you know and trust.</p></div>
-      <div class="feature-card"><h3>Get vouched</h3><p>Receive endorsements that build your reputation.</p></div>
-      <div class="feature-card"><h3>Grow your network</h3><p>Do business confidently within your circle.</p></div>
+  <section class="reveal" id="why-vouchli" style="text-align:center">
+    <h2>Why Vouchli?</h2>
+    <div class="carousel">
+      <div class="carousel-slide active"><p>✅ <strong>Not anonymous</strong> – Only verified professionals can vouch. No fake accounts.</p></div>
+      <div class="carousel-slide"><p>✅ <strong>Not generic</strong> – Built for niche communities who share real values and codes.</p></div>
+      <div class="carousel-slide"><p>✅ <strong>Not superficial</strong> – Vouches require comments and reasons, not just stars.</p></div>
+      <div class="carousel-slide"><p>✅ <strong>Not extractive</strong> – Vouchli empowers communities, it doesn't exploit them.</p></div>
     </div>
   </section>
 
@@ -35,9 +39,8 @@
     </form>
   </section>
 
-  <button id="scrollToTop">↑</button>
-
   <footer>
+    <img src="assets/logo.svg" alt="Vouchli logo" style="height: 40px; margin-bottom: 1rem;">
     <p>&copy; 2025 Vouchli. All rights reserved. · <a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a></p>
   </footer>
 
